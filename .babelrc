@@ -1,0 +1,6 @@
+// trình dịch 
+{
+    "presets": [
+        "@babel/preset-env"
+    ]
+}
