@@ -12,33 +12,36 @@
 
 <body>
     <div class="user-infor-container">
+        <form method="POST" action="/users/create-user">
+            <div class="container">
 
-        <div class="container">
+                <div class="row">
 
-            <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" name="emailName"
+                                aria-describedby="emailHelp" required>
+                        </div>
 
-                <div class="col-md-6">
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" name="password" id="password" required>
+                        </div>
+                        <div class="pb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" name="username" id="username" required>
+                        </div>
+
                     </div>
-
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="pb-3">
-                        <label for="username" class="form-label">Username</label>
-                        <input type="text" class="form-control" id="username">
+                    <div class="col-md-12 mt-3">
+                        <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
 
                 </div>
-                <div class="col-md-12 mt-3">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-
             </div>
-        </div>
+
+        </form>
     </div>
 </body>
 
