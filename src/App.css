@@ -1,0 +1,178 @@
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background-color: white;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  width: 100px;
+}
+
+i {
+  padding: 0;
+  width: 20px;
+}
+
+/* NAVBAR */
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+}
+
+.group-navbar .logo{
+  width: 180px;
+    height: auto;
+}
+
+.search{
+  width:650px;
+  background:white;
+  box-shadow:0 0 5px hsl(0 0% 78%);
+  height:55px;
+  border-radius:100vw;
+  display:flex;
+  justify-content:center;
+  font-size:0.6rem;
+  /* margin-left: 20px; */
+}
+
+.search *{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  box-shadow: solid 5px;
+}
+
+.search p{
+  color: black;
+  font-weight: bold;
+}
+
+.search div{
+  border-radius:inherit;
+  padding:0.8rem 1.5rem;
+  transition:background 250ms ease;
+}
+
+.search div:hover{
+    background:hsl(0 0% 94%);
+  }
+
+  .search .location{
+  width:34%;
+}
+.search .check-in, .check-out, .guests{
+  width:22%;
+}
+
+.search input[type="text"]{
+  background:none;
+  border:none;
+  padding:0.2rem 0 0 0;
+}
+
+.search input[type="text"]:focus{
+  outline:none;
+}
+
+.search ::placeholder{
+  font-size:0.75rem;
+}
+
+.guests{
+  position: relative;  
+}
+.search .guests span{
+  position:absolute;
+  top:50%;
+  right:10px;
+  transform:translateY(-50%);
+  background:#FF385C;
+  color:white;
+  font-size:1rem;
+  padding:0.7rem;
+  border-radius:50%;
+}
+
+.search>div{
+  position:relative;
+}
+
+
+.search>div::before{
+  position:absolute;
+  content:"";
+  left:0;
+  top:50%;
+  transform:translateY(-50%);
+  width:1px;
+  height:55%;
+  background:hsl(0 0% 90%);
+}
+
+.search>div:nth-of-type(1)::before{
+   background:transparent;
+}
+
+.search>div:hover::before{
+  background:transparent;
+}
+
+.group-navbar .fa-regular{
+  width: 70px;
+  height: auto;
+  font-size: 20px;
+  color: #000000;
+  /* justify-content: space-between; */
+
+}
+
